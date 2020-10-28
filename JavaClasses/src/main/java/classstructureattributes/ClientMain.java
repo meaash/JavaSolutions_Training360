@@ -1,6 +1,5 @@
 package classstructureattributes;
 import java.util.*;
-import java.lang.*;
 
 public class ClientMain {
     public static void main(String[] args) {
@@ -9,16 +8,15 @@ public class ClientMain {
         String name = scanner.nextLine();
 
         int year = 0;
-        System.out.println("Kérem adja meg a születési évét:");
-        String input = scanner.nextLine();
-        boolean checknum = tryParseInt(input);
+        boolean checknum = false;
         while (!checknum){
             System.out.println("Kérem adja meg a születési évét:");
-            input = scanner.nextLine();
+            String input = scanner.nextLine();
             checknum = tryParseInt(input);
+            if (checknum) {
+                year =  Integer.parseInt(input);}
         }
-        if (checknum) {
-            year =  Integer.parseInt(input);}
+
 
 
     /* if (tryParseInt(input)) {
