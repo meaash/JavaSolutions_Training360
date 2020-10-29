@@ -11,12 +11,14 @@ public class BookMain {
         System.out.println("Könyv címe:");
         String title = scanner.nextLine();
 
+        Book b = new Book(author, title);
+        System.out.println("Regisztrálva van a könyv?");
+        System.out.println(b.isAvailable());
+        System.out.println("A könyv regisztrálása...");
         System.out.println("Könyv regisztrációs száma:");
         String regNumber = scanner.nextLine();
-
-        Book b = new Book(author, title);
         b.register(regNumber);
-
+        System.out.println(b.isAvailable());
         System.out.println("A könyv adatai:\nKönyv címe: " + b.getTitle() +"\nSzerző: " + b.getAuthor()
                 +"\nRegszáma: " + b.getRegNumber());
     }
