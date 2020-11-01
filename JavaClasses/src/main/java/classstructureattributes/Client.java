@@ -1,12 +1,16 @@
 package classstructureattributes;
 
-import java.util.Calendar;
+import java.time.LocalDate;
+//import java.util.Calendar;
+
 
 public class Client {
 
-    Calendar calendar = Calendar.getInstance();
+    LocalDate date = LocalDate.now();
+
+    //Calendar calendar = Calendar.getInstance();
     private String name;
-    private int year;
+    private int year ;
     private String address;
     private int age ;
 
@@ -14,7 +18,7 @@ public class Client {
         this.name = name;
         this.year = year;
         this.address = address;
-        this.age = calendar.get(Calendar.YEAR) - this.year;
+        this.age = date.getYear() - this.year;
     }
 
 
