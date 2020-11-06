@@ -27,8 +27,6 @@ public class Investment {
         if (active)
         { active = false;
         double f = fund;
-            System.out.println(f + getYield(days));
-            System.out.println(1.0-cost);
         return (f + getYield(days))*(1.0-cost);
         }
         else{
