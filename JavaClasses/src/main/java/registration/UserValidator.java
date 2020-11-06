@@ -3,11 +3,9 @@ package registration;
 public class UserValidator {
 
     public boolean isValidUsername(String username){
-        boolean usernameisvalid = false;
-        if (username.length() < 1){
-            usernameisvalid = true;
-        }
-        return usernameisvalid;
+
+        return (username.length() > 1);
+
 
     }
     public boolean isValidPassword(String password1, String password2){
