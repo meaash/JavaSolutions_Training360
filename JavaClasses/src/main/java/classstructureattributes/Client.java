@@ -6,9 +6,11 @@ import java.time.LocalDate;
 
 public class Client {
 
-    LocalDate date = LocalDate.now();
+    //Calendar calendar = Calendar.getInstance(); //--------- régebben volt használatban
 
-    //Calendar calendar = Calendar.getInstance();
+    private LocalDate date = LocalDate.now();
+
+
     private String name;
     private int year ;
     private String address;
