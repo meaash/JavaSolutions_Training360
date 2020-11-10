@@ -17,9 +17,9 @@ public class Investment {
         return fund;
     }
     public double getYield(int days){
-        double f = fund;
-        double iR = interestRate;
-        return ((f * (iR / 100))/365)*days;
+       // double f = fund;
+       // double iR = interestRate;
+        return ((fund * (interestRate / 100.0))/365.0)*days;
 
     }
 
