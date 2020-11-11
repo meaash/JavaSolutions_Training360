@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.YearMonth;
+import java.util.Arrays;
 
 public class ArrayOfArraysMain {
     public static void main(String[] args) {
@@ -87,10 +88,11 @@ public class ArrayOfArraysMain {
         for( int i = 0; i < matrix.length; i++ )
         {
             YearMonth yearMonthObject = YearMonth.of(LocalDateTime.now().getYear(), i+1);
-           matrix[i] = new int[yearMonthObject.lengthOfMonth()];
+            matrix[i] = new int[yearMonthObject.lengthOfMonth()];
             for( int j = 0; j < matrix[i].length; j++ )
             {
-                matrix[i][j] = j+1;
+               // matrix[i][j] = j+1;
+                Arrays.fill(matrix[i], j+1);
             }
         }
         String output = "";
