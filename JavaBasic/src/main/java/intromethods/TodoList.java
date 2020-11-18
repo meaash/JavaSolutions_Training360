@@ -20,12 +20,8 @@ public class TodoList {
     }
     public void finishAllTodos(List<String> todostofinish){
         for (String item:todostofinish) {
-            for (Todo todo:todolist) {
-                if(todo.getCaption().equals(item)){
-                    todo.finish();
-                }
+                finishToDos(item);
             }
-        }
     }
 
     public List<String> todosToFinish(){
