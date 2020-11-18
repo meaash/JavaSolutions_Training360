@@ -52,7 +52,7 @@ public class TodoList {
     @Override
     public String toString() {
         return "TodoList{" +
-                "todolist=" + todolist +
+                "todolist=" + todolist.toString() +
                 '}';
     }
 
