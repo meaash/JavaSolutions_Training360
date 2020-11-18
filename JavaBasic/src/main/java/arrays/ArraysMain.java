@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ArraysMain {
     public static void main(String[] args) {
-       String mymonth = numberOfDaysAsString();
+        String mymonth = numberOfDaysAsString();
         System.out.println(mymonth);
         /*for (String item: daysOfWeek())
         {
