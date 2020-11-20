@@ -7,5 +7,6 @@ public class WorkdayCalculatorMain {
         WorkdayCalculator w = new WorkdayCalculator();
         List<DayType> myDays = w.dayTypes(Day.FRIDAY, 15);
         System.out.println(myDays);
+
     }
 }
