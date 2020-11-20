@@ -16,7 +16,7 @@ public class PrimitiveTypes {
         }
         return sbinary;
 
-        // for(int i = index-1;i >= 0;i--){
+        // for(int i = index-1;i >= 0;i--){ //nullák nélküli kiíratás
         //   System.out.print(binary[i]);}
 
     }
