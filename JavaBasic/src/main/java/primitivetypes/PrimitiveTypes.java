@@ -15,5 +15,9 @@ public class PrimitiveTypes {
             sbinary += Integer.toString(binary[i]);
         }
         return sbinary;
+
+        // for(int i = index-1;i >= 0;i--){
+        //   System.out.print(binary[i]);}
+
     }
 }
