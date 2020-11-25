@@ -7,13 +7,15 @@ public class Company {
 
     private List<Employee> employeeList;
 
-    public Company(List<Employee> employeeList) {
+    public Company(List<Employee> employeeList)
+    {
             this.employeeList = employeeList;
     }
+
     public void addEmployee(Employee e){
              employeeList.add(e);
-
         }
+
     public Employee findEmployeeByName(String name){
         Employee employee = null;
         for (var item:employeeList) {
@@ -31,5 +33,7 @@ public class Company {
         return namelist;
     }
 
-
+    public List<Employee> getEmployeeList() {
+        return employeeList;
+    }
 }

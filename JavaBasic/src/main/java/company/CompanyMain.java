@@ -16,7 +16,8 @@ public class CompanyMain {
         Employee e3 = new Employee("Kiss Béla", 1985);
         c.addEmployee(e2);
         c.addEmployee(e3);
-
+        employeeList.add(e3);
+        employeeList.remove(e);
         Employee search = c.findEmployeeByName("Nagy Béla");
         System.out.println(search.getName());
 
