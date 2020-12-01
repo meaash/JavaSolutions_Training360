@@ -6,11 +6,11 @@ import java.util.List;
 public class DictionrayItem {
 
     private String word;
-    private List<String> translations = new ArrayList<>();
+    private List<String> translations; //= new ArrayList<>() nem kell mert így redundant;
 
     public DictionrayItem(String word, List<String> translations) {
         this.word = word;
-        addTranslations(translations);
+        this.translations = translations;
     }
 
     public void addTranslations(List<String> newTranslations){
