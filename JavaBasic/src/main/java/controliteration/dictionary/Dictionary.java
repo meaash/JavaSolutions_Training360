@@ -8,16 +8,20 @@ public class Dictionary {
     private List<DictionrayItem> DictionaryList = new ArrayList<>();
 
     public void addItem(String word, List<String> translations) {
-        if (containsWord(word) ==false){
+        if (!containsWord(word)){
         DictionaryList.add(new DictionrayItem(word, translations));}
         else{
-            for (DictionrayItem di:getDictionaryList()) {
-                if(di.getWord().equals(word)){
-                    di.addTranslations(translations);
-                }
+                    getDictionaryItem(word).addTranslations(translations);
             }
         }
 
+    private DictionrayItem getDictionaryItem(String word){
+        for (DictionrayItem di:getDictionaryList()) {
+            if(di.getWord().equals(word)){
+                return di;
+            }
+        }
+        throw new IllegalArgumentException("Nincs ilyen szó a szótárban");
     }
     private boolean containsWord(String word) {
         //like Linq Any (boolean exists)
