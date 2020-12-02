@@ -9,10 +9,10 @@ public class SsnValidator {
     public boolean isValidSsn(String ssn){
         try {
             //int value = Integer.parseInt(ssn);
-            char[] ch = ssn.toCharArray();
+           // char[] ch = ssn.toCharArray();
             int[] ints = new int[9];
-            for (int i=0; i < ch.length; i++) {
-                ints[i] = Integer.parseInt(String.valueOf(ch[i]));
+            for (int i=0; i < ssn.length(); i++) {
+                ints[i] = Integer.parseInt(String.valueOf(ssn.charAt(i)));
             }
             int paratlan = 0;
             int paros = 0;

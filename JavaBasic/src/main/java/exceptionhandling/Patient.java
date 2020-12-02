@@ -8,11 +8,12 @@ public class Patient {
    // private SsnValidator ssnValidator = new SsnValidator();
 
     public Patient(String name, String ssn, int yearOfBirth) {
-        if (name.isEmpty() && yearOfBirth < 1900 && ! new SsnValidator().isValidSsn(ssn)){
+        if (name.isEmpty() || yearOfBirth < 1900 || ! new SsnValidator().isValidSsn(ssn)){
             throw new IllegalArgumentException("Helytelen adatok: \nNév: " +name
                     +"\nSzületési év: "+yearOfBirth
                     +"\nTAJ: "+ssn);
-        }
+        } //külön if ágakba érdemes tenni és mindegyikre külön kivételt dobni.
+
         this.name = name;
         this.socialSecurityNumber = ssn;
         this.yearOfBirth = yearOfBirth;
