@@ -110,7 +110,7 @@ public class ClassRecords {
             result.add(new StudyResultByName(student.getName(), student.calculateAverage()));
         }
         return result;
-    } //a diákok nevét és tanulmányi átlagát egy-egy új objektumba viszi,
+    }  //a diákok nevét és tanulmányi átlagát egy-egy új objektumba viszi,
     // és azok listáját adja vissza
 
     public String listStudentNames(){

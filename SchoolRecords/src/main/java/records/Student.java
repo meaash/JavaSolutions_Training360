@@ -57,7 +57,7 @@ public class Student {
     } // tantárgyhoz tartozó átlag számítása
 
     private boolean isEmpty(String str){
-        return (str == null || str.isEmpty())? true : false;
+        return (str == null || str.isEmpty());
     }
 
     private boolean hasMarkFromSubject(Subject subject){
