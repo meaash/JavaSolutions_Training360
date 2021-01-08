@@ -33,12 +33,16 @@ public class Robot {
     }
 
     public Robot registerNavigationPoint(){
-        NavigationPoint np = new NavigationPoint(this.distance, this.azimut);
+        NavigationPoint np = new NavigationPoint(this); //nem jó megoldás
         navigationList.add(np);
         return this;
     }
 
+   /* public Robot registerNavigationPoint(){
+        NavigationPoint np = new NavigationPoint(this.distance, this.azimut);
+        navigationList.add(np);
+        return this;*/
+    }
 
 
 
-}
