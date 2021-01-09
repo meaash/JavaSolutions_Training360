@@ -33,15 +33,11 @@ public class Robot {
     }
 
     public Robot registerNavigationPoint(){
-        NavigationPoint np = new NavigationPoint(this); //nem jó megoldás
-        navigationList.add(np);
-        return this;
-    }
-
-   /* public Robot registerNavigationPoint(){
         NavigationPoint np = new NavigationPoint(this.distance, this.azimut);
         navigationList.add(np);
-        return this;*/
+        return this;}
+        //return this miatt, nem lehet az objektumot átadni, mert különben mindig a legutolsó
+        //állapotot adja vissza
     }
 
 
