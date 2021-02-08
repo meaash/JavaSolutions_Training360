@@ -14,12 +14,12 @@ public class HeadQuarter {
     public void addTrooper(Trooper trooper){
         troopers.add(trooper);
     }
+
     public void moveTrooperByName(String name, Position position){
         findTrooperByName(name).changePosition(position);
     }
     public void moveClosestTrooper(Position target){
         findClosestTrooper(target).changePosition(target);
-
     }
 
     private Trooper findTrooperByName(String name){

@@ -25,7 +25,7 @@ public class Trooper {
         if (target == null){
             throw new IllegalArgumentException();
         }
-        this.position = target;
+        this.position = target; //ezzel megváltoztatjuk a poziícioját, innentől ez lesz
     }
 
     public double distanceFrom (Position target){

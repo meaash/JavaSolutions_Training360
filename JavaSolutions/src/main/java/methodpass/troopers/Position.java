@@ -2,8 +2,8 @@ package methodpass.troopers;
 
 public class Position {
 
-    private double posX;
-    private double posY;
+    private final double posX; //ha nem adunk settert egyébként sem lesz megváltoztatható;
+    private final double posY;
 
     public Position(double posX, double posY) {
         this.posX = posX;
