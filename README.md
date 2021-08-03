@@ -1,1 +1,1 @@
-# Kismama_KovacsEdit_Java
+# Java BE training360 solutions
